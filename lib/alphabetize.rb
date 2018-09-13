@@ -1,7 +1,6 @@
 esp_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-ascii = "@"
+ascii = "@-\\"
 
 def alphabetize(arr)
-  arr.sort_by { |word| }
-  arr.sort_by{|string| string.tr(esp_alph, ascii)}
+  arr.sort_by{ |string| string.tr(esp_alph, ascii)}
 end
