@@ -1,5 +1,5 @@
-ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-
 def alphabetize(arr)
-  arr.sort_by { |word| word[0].}
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+  arr.sort_by do |string| 
+    string.map do 
 end
