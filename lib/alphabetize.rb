@@ -1,5 +1,7 @@
-ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
 
 def alphabetize(arr)
-  arr.sort_by { |word| }
+  esp_alph = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+ascii = "@-\\"
+  arr.sort_by{ |string| string[1].tr(esp_alph, ascii)}
 end
